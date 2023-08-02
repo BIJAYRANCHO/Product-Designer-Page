@@ -8,5 +8,36 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('.main'),
     smooth: true
 });
+
 // GSAP
-// SCROLL TRIGGER
+/* attach GSAP*/
+
+
+
+function circleMouseFollower(){
+    window.addEventListener("mousemove", (dets)=>{
+        // console.log(dets.clientX, dets.clientY);
+        document.querySelector('.miniCircle').style.transform =
+         `translate(${dets.clientX}px, ${dets.clientY}px)`;
+    })
+}
+
+circleMouseFollower();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
