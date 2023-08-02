@@ -12,6 +12,18 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.bounding{
+  width: fit-content;
+  /* background-color: red; */
+  overflow: hidden;
+
+}
+.boundingelem{
+    transform: translateY(100%);
+}
+
+
 .miniCircle{
   width: 10px;
   height: 10px;
@@ -20,7 +32,6 @@ body {
   z-index: 99999;
   border-radius: 50%;
   background-color: white;
-  
 }
 .main {
   width: 100%;
@@ -55,7 +66,6 @@ body {
 }
 #heading h1 {
   line-height: 10vw;
-
   padding-left: 30px;
   opacity: 0.6;
   font-family: "Poppins", sans-serif;
@@ -69,10 +79,12 @@ body {
 .blocktext {
   /* width: fit-content will make the width of  div  
     item exactly the width of the  content  */
-  width: fit-content;
-  /* background-color: orange; */
+    display: flex;
+    justify-content: column;
+    align-items: end;
+    width: fit-content;
 }
-.blocktext #headingh5 {
+#headingh5 {
   font-size: 1.8vw;
   text-transform: uppercase;
   font-weight: normal;
@@ -80,6 +92,9 @@ body {
 }
 
 #chotiheadings {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   margin-top: 200px;
   font-weight: normal;
   text-transform: uppercase;
